@@ -203,3 +203,19 @@ body {
 .leaflet-popup .leaflet-popup-tip {
   background-color: var(--primary);
 }
+
+.attribution {
+  width: 100%;
+  color: var(--primary);
+  font-size: 11px;
+  text-align: center;
+  margin: 0px;
+  position: fixed;
+  z-index: 9999;
+  top: 97%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.attribution a {
+  color: hsl(229, 100%, 66%);
+}
