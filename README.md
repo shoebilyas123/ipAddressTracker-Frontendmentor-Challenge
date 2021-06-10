@@ -29,12 +29,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshots/desktopView_ipTracker.png)
+![](./screenshots/mobileView_ipTracker.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [](https://www.frontendmentor.io/solutions/ip-address-tracker-using-leaflet-and-geoipify-api-zXbfPD5NZ)
+- Live Site URL: [](https://shoebilyas-ipaddresstracker.netlify.app/)
 
 ## My process
 
