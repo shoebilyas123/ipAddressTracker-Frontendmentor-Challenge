@@ -1,0 +1,35 @@
+/* =======Media Queries========= */
+@media only screen and (max-width: 780px) {
+  main {
+    min-width: 375px;
+    max-width: 1444px;
+  }
+  .main_info_container {
+    max-height: 45vh;
+    height: 45vh;
+  }
+  .search_bar_container {
+    width: 80%;
+  }
+  .search_bar_container input {
+    width: 85%;
+  }
+  .search_bar_container .btn {
+    width: 15%;
+  }
+  .info_container {
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+  }
+  .info_container_elem {
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 0;
+  }
+  .info_container_elem .title {
+    margin-bottom: 5px;
+  }
+  .info_border-elem {
+    border-right: none;
+  }
+}

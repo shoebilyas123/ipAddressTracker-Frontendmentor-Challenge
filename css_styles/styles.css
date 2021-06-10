@@ -1,0 +1,205 @@
+:root {
+  --primBlack: #000;
+  --primary: hsl(0, 0%, 17%);
+  --secondary: hsl(0, 0%, 59%);
+  --fontSize: 18px;
+  --fontFam: "Rubik", sans-serif;
+  --whiteClr: #fff;
+  --color-dark--1: #000;
+  --color-light--2: #fff;
+
+  /* Fonts */
+  --fontReg: 400;
+  --fontMed: 500;
+  --fontBold: 700;
+
+  /* Others */
+  --bRadius: 10px;
+  --height: 50px;
+  --shadow: hsla(0, 0%, 15%, 0.74);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: var(--fontSize);
+  font-family: var(--fontFam);
+  max-width: 1440px;
+  overflow-x: hidden;
+  font-weight: 400;
+  position: relative;
+  z-index: -1;
+  margin: auto;
+  background: var(--primary);
+}
+/* Transition classes */
+.hidden {
+  opacity: 0;
+}
+
+/* =================INFO CONTAINER-NAV=============== */
+.main_info_container {
+  position: relative;
+  width: 100%;
+  height: 35%;
+  max-height: 35%;
+  background: url("/images/pattern-bg.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  transition: opacity 0.2s ease-in-out, display 0.2s ease-in-out;
+}
+
+.page_title {
+  color: var(--whiteClr);
+  font-weight: var(--fontMed);
+  margin-top: 15px;
+}
+
+.search_bar_container {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  height: var(--height);
+  margin: 20px 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.search_bar_container input {
+  color: var(--secondary);
+  padding: 15px;
+  font-family: var(--fontFam);
+  font-weight: var(--fontReg);
+  border: none;
+  background-color: var(--whiteClr);
+  width: 90%;
+  outline: none;
+  font-size: var(--fontSize);
+}
+
+.search_bar_container .btn {
+  display: flex;
+  color: var(--whiteClr);
+  background-color: var(--primBlack);
+  width: 10%;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.btn_search:hover {
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+/* Info Displayer Styles */
+.info_container {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  border-radius: var(--bRadius);
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--whiteClr);
+  box-shadow: 0 4px 10px var(--shadow);
+  overflow: hidden;
+  padding: 25px;
+}
+
+.info_container_elem {
+  background-color: var(--whiteClr);
+  margin-right: 25px;
+  height: 90%;
+}
+.ip_address_display {
+  word-break: break-all;
+}
+
+.location_display {
+  word-break: normal;
+}
+.info_container .title {
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-size: 60%;
+  font-weight: var(--fontBold);
+  margin-bottom: 10px;
+}
+.title__info {
+  font-size: 135%;
+  font-weight: var(--fontMed);
+  color: var(--primary);
+}
+
+.info_border-elem {
+  border-right: 1px solid var(--secondary);
+}
+
+/* MAP Styling */
+
+#map {
+  /* border: 1px solid red; */
+  height: 100%;
+  z-index: 999;
+}
+
+.error_display,
+.loader {
+  position: fixed;
+  /* transform: translate(-50%, -50%); */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--whiteClr);
+  transition: opacity 0.2s ease;
+  z-index: 1;
+}
+.loader {
+  background: var(--primary);
+}
+.error_display {
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20%;
+  background: #e74c3c;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.hide {
+  display: none !important;
+}
+
+/* Map Popup Styling */
+
+.leaflet-popup .leaflet-popup-content-wrapper {
+  background-color: var(--primary);
+  color: var(--color-light--2);
+  border-radius: 5px;
+  padding-right: 0.6rem;
+}
+
+.leaflet-popup .leaflet-popup-content {
+  font-size: 0.9rem;
+}
+
+.leaflet-popup .leaflet-popup-tip {
+  background-color: var(--primary);
+}
