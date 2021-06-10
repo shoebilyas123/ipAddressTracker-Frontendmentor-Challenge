@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://www.frontendmentor.io/solutions/ip-address-tracker-using-leaflet-and-geoipify-api-zXbfPD5NZ)
-- Live Site URL: [](https://shoebilyas-ipaddresstracker.netlify.app/)
+- Solution URL: [Frontendmentor-Solution](https://www.frontendmentor.io/solutions/ip-address-tracker-using-leaflet-and-geoipify-api-zXbfPD5NZ)
+- Live Site URL: [Netlify-Live Site](https://shoebilyas-ipaddresstracker.netlify.app/)
 
 ## My process
 
